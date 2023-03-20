@@ -1,0 +1,14 @@
+Generating a new SSH key
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+Adding your SSH key to the ssh-agent
+windows: clip < ~/.ssh/id_rsa.pub
+mac: pbcopy < ~/.ssh/id_rsa.pub
+linux: cat ~/.ssh/id_rsa.pub
+
+In the upper-right corner of any page, click your profile photo, then click Settings.
+in the "Access" section of the sidebar, click SSH and GPG keys.
+Click New SSH key or Add SSH key.
+In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal laptop, you might call this key "Personal laptop".
+Select the type of key, either authentication or signing. For more information about commit signing, see "About commit signature verification."
+Paste your public key into the "Key" field.
